@@ -1,20 +1,23 @@
-# PATCH — ícones sociais na seção Pessoas/People
+# PATCH — Google Scholar e ResearchGate na seção Pessoas/People
 
-Substitua/adicone somente estes arquivos:
+Substitua/adicone somente:
 
 - people.html
 - en/people.html
-- assets/icons/instagram.svg
-- assets/icons/linkedin.svg
-- assets/icons/email.svg
+- assets/icons/google-scholar.svg
+- assets/icons/researchgate.svg
 
 O que muda:
-1. Adiciona Instagram, LinkedIn e e-mail profissional ao card do Prof. Dr. Vagner Antonio Marques.
-2. Aplica o ajuste na versão em português e na versão em inglês.
-3. Mantém os caminhos dos ícones acadêmicos existentes.
-4. Não altera publicações, projetos, rankings, contato, index, QR Code, mapas ou CSS.
+1. Adiciona Google Scholar logo depois do ícone do Lattes.
+2. Adiciona ResearchGate logo depois do Google Scholar.
+3. Aplica nas versões português e inglês.
+4. Remove novamente o bloco redundante:
+   - Professor da/at UFES
+   - PPGCON/UFES
+   - ORCID textual
 
-Links usados:
-- Instagram: https://www.instagram.com/vagner.a.marques
-- LinkedIn: https://linkedin.com/in/vagneramarques
-- Email: mailto:vagner.marques@ufes.br
+Não altera publicações, projetos, rankings, contato, index, CSS, QR Code ou mapas.
+
+Links:
+- Google Scholar: https://scholar.google.com/citations?user=TpUUnygAAAAJ&hl=pt-BR
+- ResearchGate: https://www.researchgate.net/profile/Vagner-Marques/2
