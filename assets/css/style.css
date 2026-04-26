@@ -538,15 +538,15 @@ a{color:var(--teal)}
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:40px;
+  gap:48px;
   flex-wrap:wrap;
   margin-top:34px;
 }
 
-/* Padroniza o espaço ocupado por cada logo */
+/* tamanho maior e legível */
 .support-logos img{
-  width:160px;
-  height:70px;
+  width:200px;
+  height:90px;
   object-fit:contain;
   background:#fff;
   padding:6px;
@@ -560,12 +560,14 @@ a{color:var(--teal)}
 }
 
 @media(max-width:720px){
+
   .support-logos{
-    gap:26px;
+    gap:28px;
   }
 
   .support-logos img{
-    width:130px;
-    height:60px;
+    width:160px;
+    height:75px;
   }
+
 }
