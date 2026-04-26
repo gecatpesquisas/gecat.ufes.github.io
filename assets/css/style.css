@@ -526,48 +526,36 @@ a{color:var(--teal)}
   }
 }
 
-/* Institutional support section */
-
 .institutional-support{
-  background:#ffffff;
-  border-top:1px solid var(--line);
-  padding:70px 0;
+margin-top:60px;
+text-align:center;
 }
 
 .support-logos{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:48px;
-  flex-wrap:wrap;
-  margin-top:34px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:60px;
+margin-top:40px;
 }
 
-/* tamanho maior e legível */
 .support-logos img{
-  width:200px;
-  height:90px;
-  object-fit:contain;
-  background:#fff;
-  padding:6px;
-  opacity:.95;
-  transition:all .2s ease;
+height:80px;
+width:auto;
+object-fit:contain;
+filter:grayscale(10%);
+transition:transform .2s ease;
 }
 
 .support-logos img:hover{
-  transform:scale(1.05);
-  opacity:1;
+transform:scale(1.05);
 }
 
-@media(max-width:720px){
+.dgp-certification{
+margin:25px 0 10px 0;
+}
 
-  .support-logos{
-    gap:28px;
-  }
-
-  .support-logos img{
-    width:160px;
-    height:75px;
-  }
-
+.dgp-certification img{
+height:70px;
 }
