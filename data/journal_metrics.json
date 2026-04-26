@@ -1,42 +1,93 @@
 {
   "Revista Contabilidade & Finanças": {
     "sjr": "SJR 2024: 0.202 / Q4",
-    "jcr": "JCR: não informado",
-    "abs": "AJG/ABS 2024: 1",
+    "jcr": "JCR/JIF: não localizado; indexada em Web of Science SciELO Citation Index",
+    "abs": "ABS/AJG 2024: 1",
     "qualis": "Qualis/CAPES: A2",
-    "capes": "CAPES 2025–2028: verificar",
-    "source": "Revista Contabilidade & Finanças — About the Journal"
+    "capes_2025_2028": "CAPES 2025–2028: verificar no Periódicos-ADM",
+    "spell": "SPELL 2024: 0.943 (2 anos) / 0.649 (5 anos)",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "basis_pt": "RC&F informa oficialmente AJG 2024, Qualis/CAPES, CiteScore, SPELL e SJR 2024; JIF não localizado em fonte aberta.",
+    "basis_en": "RC&F officially reports AJG 2024, Qualis/CAPES, CiteScore, SPELL and SJR 2024; JIF not found in open source."
   },
   "Managerial Auditing Journal": {
     "sjr": "SJR 2024: 0.605 / Q1",
-    "jcr": "JCR IF: 2.8",
-    "abs": "AJG/ABS 2024: 2",
+    "jcr": "JCR/JIF 2024: 2.8",
+    "abs": "ABS/AJG 2024: 2",
     "qualis": "Qualis/CAPES: A1",
-    "capes": "CAPES 2025–2028: MB",
-    "source": "SCImago, Journal Ranking Portal, PROFIAP"
+    "capes_2025_2028": "CAPES 2025–2028: MB",
+    "spell": "SPELL: não se aplica",
+    "impact_level": "high",
+    "impact_label_pt": "Impacto alto",
+    "impact_label_en": "High impact",
+    "basis_pt": "Critério mais forte disponível: SJR Q1, JCR/JIF e ABS/AJG 2024; CAPES 2025–2028 conforme classificador complementar.",
+    "basis_en": "Strongest available criterion: SJR Q1, JCR/JIF and ABS/AJG 2024; CAPES 2025–2028 as complementary classifier."
   },
   "Journal of Management and Governance": {
     "sjr": "SJR 2024: 1.041 / Q1",
-    "jcr": "JCR IF: 4.0",
-    "abs": "AJG/ABS 2024: 1",
-    "qualis": "Qualis/CAPES: verificar",
-    "capes": "CAPES 2025–2028: verificar",
-    "source": "SCImago/Resurchify, Journal Ranking Portal"
+    "jcr": "JCR/JIF 2025: 4.0 / Q2 (fonte secundária; confirmar na Clarivate)",
+    "abs": "ABS/AJG 2024: 1",
+    "qualis": "Qualis/CAPES: A2",
+    "capes_2025_2028": "CAPES 2025–2028: verificar no Periódicos-ADM",
+    "spell": "SPELL: não se aplica",
+    "impact_level": "high",
+    "impact_label_pt": "Impacto alto",
+    "impact_label_en": "High impact",
+    "basis_pt": "Critério mais forte disponível: SJR Q1 e indicação JCR/JIF em fonte secundária; ABS/AJG 2024 = 1.",
+    "basis_en": "Strongest available criterion: SJR Q1 and JCR/JIF indication from secondary source; ABS/AJG 2024 = 1."
   },
   "Asian Journal of Accounting Research": {
-    "sjr": "SJR: verificar",
-    "jcr": "JCR: verificar",
-    "abs": "AJG/ABS: não listado",
-    "qualis": "Qualis/CAPES 2017–2020: A3",
-    "capes": "CAPES 2025–2028: verificar",
-    "source": "Qualis public listings"
+    "sjr": "SJR 2024: 0.585 / Q2",
+    "jcr": "JCR/JIF: não localizado",
+    "abs": "ABS/AJG 2024: não localizado",
+    "qualis": "Qualis/CAPES: A2",
+    "capes_2025_2028": "CAPES 2025–2028: verificar no Periódicos-ADM",
+    "spell": "SPELL: não se aplica",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "basis_pt": "Critério mais forte disponível: SJR Q2; demais indicadores não localizados em fonte aberta.",
+    "basis_en": "Strongest available criterion: SJR Q2; other indicators not found in open sources."
   },
-  "Revista de Administração Pública": {
-    "sjr": "SJR 2024: 0.288 / Q3",
-    "jcr": "JCR IF 2024: 0.79–1.0",
-    "abs": "AJG/ABS: não listado",
-    "qualis": "Qualis/CAPES: verificar",
-    "capes": "CAPES 2025–2028: verificar",
-    "source": "FGV RAP metrics / SCImago"
+  "Revista de Educação e Pesquisa em Contabilidade": {
+    "sjr": "SJR: não localizado",
+    "jcr": "JCR/JIF: não localizado",
+    "abs": "ABS/AJG 2024: não localizado",
+    "qualis": "Qualis/CAPES: A2",
+    "capes_2025_2028": "CAPES 2025–2028: verificar no Periódicos-ADM",
+    "spell": "SPELL: indexação/área contábil",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "basis_pt": "Critério mais forte disponível: Qualis/CAPES informado pela própria revista; SJR/JCR/ABS não localizados em fonte aberta.",
+    "basis_en": "Strongest available criterion: Qualis/CAPES reported by the journal; SJR/JCR/ABS not found in open sources."
+  },
+  "Revista de Contabilidade e Organizações": {
+    "sjr": "SJR: indexada no SCImago; valor/quartil a confirmar",
+    "jcr": "JCR/JIF: não localizado",
+    "abs": "ABS/AJG 2024: não localizado",
+    "qualis": "Qualis/CAPES: A2",
+    "capes_2025_2028": "CAPES 2025–2028: verificar no Periódicos-ADM",
+    "spell": "SPELL: indexada",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "basis_pt": "Critério mais forte disponível: indexação SCImago/SPELL e Qualis; JCR/ABS não localizados em fonte aberta.",
+    "basis_en": "Strongest available criterion: SCImago/SPELL indexing and Qualis; JCR/ABS not found in open sources."
+  },
+  "Periódico indexado": {
+    "sjr": "SJR: atualizar após identificação do periódico",
+    "jcr": "JCR/JIF: atualizar após identificação do periódico",
+    "abs": "ABS/AJG: atualizar após identificação do periódico",
+    "qualis": "Qualis/CAPES: atualizar após identificação do periódico",
+    "capes_2025_2028": "CAPES 2025–2028: atualizar após identificação do periódico",
+    "spell": "SPELL: atualizar após identificação do periódico",
+    "impact_level": "unknown",
+    "impact_label_pt": "Impacto a atualizar",
+    "impact_label_en": "Impact to update",
+    "basis_pt": "Registro depende da identificação final do periódico no Lattes.",
+    "basis_en": "Record depends on final journal identification in Lattes."
   }
 }

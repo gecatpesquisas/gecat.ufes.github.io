@@ -1,18 +1,14 @@
-# PATCH — QR Code, Google Maps e correção mobile
+# PATCH — Somente métricas das publicações
 
 Substitua somente estes arquivos no GitHub:
 
-- contact.html
-- en/contact.html
-- assets/css/style.css
-- assets/images/qrcode-site-gecat.png
+- data/publications_lse_nber.json
+- data/publications_metrics.json
+- data/journal_metrics.json
+
+Não altere HTML, CSS, imagens ou outras páginas.
 
 O que muda:
-1. Adiciona Google Maps na aba Contato.
-2. Adiciona QR Code do site na aba Contato.
-3. Corrige o menu em celular via CSS, sem alterar as outras páginas.
-4. Não mexe nas páginas de publicações, projetos, working papers ou index.
-
-Importante:
-- Envie preservando as pastas.
-- O arquivo QR deve ficar em: assets/images/qrcode-site-gecat.png
+- Atualiza os badges de cada publicação com SJR, JCR/JIF, ABS/AJG, Qualis/CAPES e CAPES 2025–2028.
+- Mantém a estrutura e o layout já existentes.
+- Onde a métrica não foi encontrada em fonte aberta, o campo informa "não localizado" ou "verificar no Periódicos-ADM".
