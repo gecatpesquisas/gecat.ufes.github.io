@@ -525,3 +525,44 @@ a{color:var(--teal)}
     font-size:.72rem;
   }
 }
+
+/* Institutional support section */
+
+.institutional-support{
+  background:#ffffff;
+  border-top:1px solid var(--line);
+  padding:70px 0;
+}
+
+.support-logos{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:42px;
+  flex-wrap:wrap;
+  margin-top:34px;
+}
+
+.support-logos img{
+  max-height:72px;
+  max-width:220px;
+  object-fit:contain;
+  opacity:.95;
+  transition:all .2s ease;
+}
+
+.support-logos img:hover{
+  transform:scale(1.05);
+  opacity:1;
+}
+
+@media(max-width:720px){
+  .support-logos{
+    gap:24px;
+  }
+
+  .support-logos img{
+    max-height:56px;
+    max-width:160px;
+  }
+}
