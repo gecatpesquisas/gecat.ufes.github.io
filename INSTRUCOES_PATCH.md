@@ -1,20 +1,22 @@
-# PATCH — Métricas explícitas e textos limpos
+# PATCH — Lattes, Qualis/CAPES, publicações indexadas e projetos financiados
 
-Substitua somente estes arquivos:
+Substitua/adicone somente estes arquivos no GitHub:
 
-- publications.html
-- working-papers.html
-- applied-projects.html
-- en/publications.html
-- en/working-papers.html
-- en/applied-projects.html
-- assets/js/publications.js
-- data/publications_lse_nber.json
-- data/publications_metrics.json
-- data/journal_metrics.json
+- `applied-projects.html`
+- `en/applied-projects.html`
+- `assets/js/publications.js`
+- `data/publications_lse_nber.json`
+- `data/publications_metrics.json`
+- `data/journal_metrics.json`
+- `data/funded_projects.json`
+- `data/sources/classificacao_area27_periodicos.xlsx`
+- `data/sources/classificacoes_publicadas_area27_2026.xlsx`
+- `data/sources/README_fontes.md`
 
 O que muda:
-1. As publicações passam a exibir métricas separadas: CAPES, ABDC, ABS, SJR, JCR, SPELL e Qualis.
-2. Remove textos de bastidor como “integração com Lattes”, “atualize o arquivo...”, “rastreio privado...” etc.
-3. Mantém os critérios de classificação nos cards, mas de forma limpa.
-4. Não altera contato, QR Code, Google Maps, index, imagens ou CSS.
+1. A seção Publicações passa a conter somente artigos publicados/aceitos em periódicos indexados em Scopus, Web of Science, SciELO ou SPELL.
+2. As métricas exibem CAPES 2025–2028, ABDC, ABS, JCR, SJR, SPELL e Qualis revisado conforme os arquivos de classificação.
+3. A seção Projetos Financiados passa a exibir edital, instituição de fomento e resumo.
+4. As planilhas de classificação ficam arquivadas em `data/sources/` para consulta no GitHub.
+
+Não altera index, contato, QR Code, Google Maps, imagens, CSS, working papers ou awards.

@@ -1,5 +1,7 @@
 {
   "Revista Contabilidade & Finanças": {
+    "issn": "1808-057X",
+    "indexing": "Scopus / Web of Science / SciELO / SPELL",
     "CAPES": "B",
     "ABDC": "C",
     "ABS": "1",
@@ -10,56 +12,84 @@
     "impact_level": "moderate",
     "impact_label_pt": "Impacto moderado",
     "impact_label_en": "Moderate impact",
-    "criterion_pt": "Critério: CAPES 2025–2028, ABDC, ABS/AJG, SJR e SPELL; Qualis histórico mantido como referência complementar.",
-    "criterion_en": "Criterion: CAPES 2025–2028, ABDC, ABS/AJG, SJR and SPELL; historical Qualis kept as complementary reference.",
-    "indexing": "Scopus / Web of Science / SPELL / SciELO"
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
   },
   "Managerial Auditing Journal": {
+    "issn": "0268-6902",
+    "indexing": "Scopus / Web of Science",
     "CAPES": "MB",
-    "ABDC": "B",
+    "ABDC": "—",
     "ABS": "2",
     "SJR": "Q1",
     "JCR": "Q3",
     "SPELL": "—",
-    "Qualis": "A2",
+    "Qualis": "A1",
     "impact_level": "high",
     "impact_label_pt": "Impacto alto",
     "impact_label_en": "High impact",
-    "criterion_pt": "Critério: maior impacto disponível por SJR/ABS/JCR, com CAPES 2025–2028 como classificador complementar.",
-    "criterion_en": "Criterion: highest available impact by SJR/ABS/JCR, with CAPES 2025–2028 as complementary classifier.",
-    "indexing": "Scopus / Web of Science"
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
   },
   "Revista de Educação e Pesquisa em Contabilidade": {
+    "issn": "1981-8610",
+    "indexing": "SPELL",
     "CAPES": "B",
     "ABDC": "—",
     "ABS": "—",
     "SJR": "—",
     "JCR": "—",
-    "SPELL": "Base SPELL",
-    "Qualis": "A2",
+    "SPELL": "10% melhores",
+    "Qualis": "A4",
     "impact_level": "moderate",
     "impact_label_pt": "Impacto moderado",
     "impact_label_en": "Moderate impact",
-    "criterion_pt": "Critério: periódico nacional indexado em SPELL; classificação CAPES/Periódicos-ADM usada como referência de impacto.",
-    "criterion_en": "Criterion: Brazilian journal indexed in SPELL; CAPES/Periódicos-ADM classification used as impact reference.",
-    "indexing": "SPELL / Google Scholar"
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
   },
   "Journal of Management and Governance": {
+    "issn": "1385-3457",
+    "indexing": "Scopus / Web of Science",
     "CAPES": "MB",
     "ABDC": "B",
     "ABS": "—",
     "SJR": "Q1",
     "JCR": "Q2",
     "SPELL": "—",
-    "Qualis": "A1",
+    "Qualis": "A2",
     "impact_level": "high",
     "impact_label_pt": "Impacto alto",
     "impact_label_en": "High impact",
-    "criterion_pt": "Critério: periódico internacional indexado em Scopus/Web of Science, com maior impacto indicado por SJR/JCR.",
-    "criterion_en": "Criterion: international journal indexed in Scopus/Web of Science, with higher impact indicated by SJR/JCR.",
-    "indexing": "Scopus / Web of Science"
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
   },
   "Asian Journal of Accounting Research": {
+    "issn": "2443-4175",
+    "indexing": "Scopus",
     "CAPES": "B",
     "ABDC": "—",
     "ABS": "—",
@@ -70,23 +100,167 @@
     "impact_level": "moderate",
     "impact_label_pt": "Impacto moderado",
     "impact_label_en": "Moderate impact",
-    "criterion_pt": "Critério: indexação Scopus e classificação SJR, com CAPES 2025–2028 como referência complementar.",
-    "criterion_en": "Criterion: Scopus indexing and SJR classification, with CAPES 2025–2028 as complementary reference.",
-    "indexing": "Scopus / DOAJ"
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
   },
   "Revista de Contabilidade e Organizações": {
+    "issn": "1982-6486",
+    "indexing": "SciELO / SPELL",
     "CAPES": "B",
     "ABDC": "—",
     "ABS": "—",
     "SJR": "—",
     "JCR": "—",
-    "SPELL": "Base SPELL",
+    "SPELL": "10% melhores",
     "Qualis": "A2",
     "impact_level": "moderate",
     "impact_label_pt": "Impacto moderado",
     "impact_label_en": "Moderate impact",
-    "criterion_pt": "Critério: periódico nacional da área contábil com indexação SPELL/SciELO; CAPES 2025–2028 usado como referência complementar.",
-    "criterion_en": "Criterion: Brazilian accounting journal indexed in SPELL/SciELO; CAPES 2025–2028 used as complementary reference.",
-    "indexing": "SPELL / SciELO / Google Scholar"
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
+  },
+  "REUNIR: Revista de Administração, Ciências Contábeis e Sustentabilidade": {
+    "issn": "2237-3667",
+    "indexing": "SPELL",
+    "CAPES": "R",
+    "ABDC": "—",
+    "ABS": "—",
+    "SJR": "—",
+    "JCR": "—",
+    "SPELL": "Entre 10% e 40% melhores",
+    "Qualis": "B1",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
+  },
+  "Contabilidade Vista & Revista": {
+    "issn": "0103-734X",
+    "indexing": "SPELL",
+    "CAPES": "R",
+    "ABDC": "—",
+    "ABS": "—",
+    "SJR": "—",
+    "JCR": "—",
+    "SPELL": "Entre 10% e 40% melhores",
+    "Qualis": "B1",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
+  },
+  "BBR. Brazilian Business Review": {
+    "issn": "1808-2386",
+    "indexing": "Scopus / Web of Science / SciELO",
+    "CAPES": "B",
+    "ABDC": "—",
+    "ABS": "—",
+    "SJR": "Q2",
+    "JCR": "Q3",
+    "SPELL": "—",
+    "Qualis": "A2",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
+  },
+  "Contabilidade, Gestão e Governança": {
+    "issn": "1984-3925",
+    "indexing": "SPELL",
+    "CAPES": "R",
+    "ABDC": "—",
+    "ABS": "—",
+    "SJR": "—",
+    "JCR": "—",
+    "SPELL": "Entre 10% e 40% melhores",
+    "Qualis": "A4",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
+  },
+  "Revista Contemporânea de Contabilidade": {
+    "issn": "2175-8069",
+    "indexing": "SPELL",
+    "CAPES": "B",
+    "ABDC": "—",
+    "ABS": "—",
+    "SJR": "—",
+    "JCR": "—",
+    "SPELL": "10% melhores",
+    "Qualis": "A3",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
+  },
+  "Advances in Scientific and Applied Accounting": {
+    "issn": "1983-8611",
+    "indexing": "SPELL",
+    "CAPES": "B",
+    "ABDC": "—",
+    "ABS": "—",
+    "SJR": "—",
+    "JCR": "—",
+    "SPELL": "10% melhores",
+    "Qualis": "A3",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "criterion_pt": "Critério: melhor posição entre CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL e SciELO, conforme metodologia da Área 27.",
+    "criterion_en": "Criterion: best available position across CAPES 2025–2028, ABDC, ABS/AJG, JCR, SJR, SPELL and SciELO, following Area 27 methodology.",
+    "sources": [
+      "http://lattes.cnpq.br/8704491263853222",
+      "https://periodicos-adm.com/",
+      "https://journalranking.org/",
+      "https://www.scimagojr.com/"
+    ]
   }
 }
