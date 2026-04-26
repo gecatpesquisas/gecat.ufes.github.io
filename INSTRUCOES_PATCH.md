@@ -1,16 +1,20 @@
-# PATCH — Métricas das publicações sem status "Verificar"
+# PATCH — Métricas explícitas e textos limpos
 
-Substitua somente a pasta/arquivos abaixo:
+Substitua somente estes arquivos:
 
+- publications.html
+- working-papers.html
+- applied-projects.html
+- en/publications.html
+- en/working-papers.html
+- en/applied-projects.html
+- assets/js/publications.js
 - data/publications_lse_nber.json
 - data/publications_metrics.json
 - data/journal_metrics.json
 
-O que foi corrigido:
-1. Remove o badge/status "CAPES 2025–2028: Verificar".
-2. Mantém somente métricas apresentáveis: SJR, JCR/JIF, ABS/AJG, Qualis/CAPES, SPELL e CAPES/Periódicos-ADM.
-3. Remove registros genéricos "Periódico indexado", pois eles não permitem métricas confiáveis por periódico.
-4. Não altera HTML, CSS, imagens, layout, contato, projetos nem working papers.
-
-Observação:
-Quando a classificação CAPES 2025–2028 não está exposta em fonte aberta indexável, o campo passa a apontar para "Base Periódicos-ADM" em vez de mostrar "Verificar".
+O que muda:
+1. As publicações passam a exibir métricas separadas: CAPES, ABDC, ABS, SJR, JCR, SPELL e Qualis.
+2. Remove textos de bastidor como “integração com Lattes”, “atualize o arquivo...”, “rastreio privado...” etc.
+3. Mantém os critérios de classificação nos cards, mas de forma limpa.
+4. Não altera contato, QR Code, Google Maps, index, imagens ou CSS.

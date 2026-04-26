@@ -20,8 +20,7 @@ async function loadPublications(lang){
       journal:'Journal',
       scholar:'Google Scholar',
       shown:'publicações exibidas',
-      capes:'CAPES 2025–2028',
-      basis:'Critério'
+      criterion:'Critério'
     },
     en: {
       allYears:'All years',
@@ -32,8 +31,7 @@ async function loadPublications(lang){
       journal:'Journal',
       scholar:'Google Scholar',
       shown:'publications shown',
-      capes:'CAPES 2025–2028',
-      basis:'Basis'
+      criterion:'Criterion'
     }
   }[lang];
 
@@ -42,11 +40,15 @@ async function loadPublications(lang){
   }
 
   function fillSelect(select, values, firstLabel){
+    if(!select) return;
     select.innerHTML = `<option value="">${firstLabel}</option>` + values.map(v => `<option value="${v}">${v}</option>`).join('');
   }
 
   fillSelect(yearFilter, unique(publications.map(p => String(p.year))), labels.allYears);
-  fillSelect(rankingFilter, unique(publications.map(p => (p.ranking || '').split('·')[0].trim())), labels.allRankings);
+  fillSelect(rankingFilter, unique(publications.flatMap(p => {
+    const m = p.metrics || {};
+    return [m.CAPES, m.ABDC, m.ABS, m.SJR, m.JCR, m.SPELL, m.Qualis].filter(x => x && x !== '—');
+  })), labels.allRankings);
   fillSelect(areaFilter, unique(publications.map(p => lang === 'en' ? p.area_en : p.area_pt)), labels.allAreas);
 
   function scholarLink(title){
@@ -54,37 +56,48 @@ async function loadPublications(lang){
   }
 
   function slug(text){
-    return text.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   }
 
   function impactBadge(p){
     const level = p.impact_level || 'unknown';
-    const label = lang === 'en' ? (p.impact_label_en || 'Impact to verify') : (p.impact_label_pt || 'Impacto a verificar');
+    const label = lang === 'en' ? (p.impact_label_en || 'Impact') : (p.impact_label_pt || 'Impacto');
     return `<span class="impact-badge impact-${level}"><span class="impact-dot">●</span>${label}</span>`;
   }
 
+  function metricBadges(p){
+    const m = p.metrics || {};
+    const order = ['CAPES','ABDC','ABS','SJR','JCR','SPELL','Qualis'];
+    return order
+      .filter(k => m[k] && m[k] !== '—')
+      .map(k => `<span>${k}: ${m[k]}</span>`)
+      .join('');
+  }
+
   function render(){
-    const y = yearFilter.value;
-    const r = rankingFilter.value.toLowerCase();
-    const a = areaFilter.value.toLowerCase();
-    const q = searchInput.value.toLowerCase();
+    const y = yearFilter ? yearFilter.value : '';
+    const r = rankingFilter ? rankingFilter.value.toLowerCase() : '';
+    const a = areaFilter ? areaFilter.value.toLowerCase() : '';
+    const q = searchInput ? searchInput.value.toLowerCase() : '';
 
     const filtered = publications.filter(p => {
       const area = (lang === 'en' ? p.area_en : p.area_pt || '').toLowerCase();
-      const text = `${p.title} ${p.authors} ${p.journal} ${p.indexing} ${p.ranking} ${p.capes_2025_2028}`.toLowerCase();
+      const metricText = Object.entries(p.metrics || {}).map(([k,v]) => `${k}: ${v}`).join(' ');
+      const text = `${p.title} ${p.authors} ${p.journal} ${p.indexing} ${metricText}`.toLowerCase();
       return (!y || String(p.year) === y)
-        && (!r || (p.ranking || '').toLowerCase().includes(r))
+        && (!r || metricText.toLowerCase().includes(r))
         && (!a || area === a)
         && (!q || text.includes(q));
     });
 
-    summary.textContent = `${filtered.length} ${labels.shown}`;
+    if(summary) summary.textContent = `${filtered.length} ${labels.shown}`;
+    if(!list) return;
+
     list.innerHTML = filtered.map(p => {
       const status = lang === 'en' ? p.status_en : p.status_pt;
       const area = lang === 'en' ? p.area_en : p.area_pt;
+      const criterion = lang === 'en' ? p.criterion_en : p.criterion_pt;
       const id = slug(p.title);
-      const capes = p.capes_2025_2028 ? `<span>${labels.capes}: ${p.capes_2025_2028}</span>` : '';
-      const basis = lang === 'en' ? (p.impact_basis_en || '') : (p.impact_basis_pt || '');
       const actions = [
         p.doi ? `<a href="${p.doi}" target="_blank" rel="noopener" data-goatcounter-click="publication-doi-${id}">${labels.doi}</a>` : '',
         p.ssrn ? `<a href="${p.ssrn}" target="_blank" rel="noopener" data-goatcounter-click="publication-ssrn-${id}">${labels.ssrn}</a>` : '',
@@ -104,16 +117,15 @@ async function loadPublications(lang){
           <div class="publication-badges">
             <span>${area}</span>
             <span>${p.indexing}</span>
-            <span>${p.ranking}</span>
-            ${capes}
+            ${metricBadges(p)}
           </div>
-          ${basis ? `<div class="ranking-source">${labels.basis}: ${basis}</div>` : ''}
+          ${criterion ? `<div class="ranking-source">${criterion}</div>` : ''}
           <div class="publication-actions">${actions}</div>
         </article>
       `;
     }).join('');
   }
 
-  [yearFilter, rankingFilter, areaFilter, searchInput].forEach(el => el.addEventListener('input', render));
+  [yearFilter, rankingFilter, areaFilter, searchInput].filter(Boolean).forEach(el => el.addEventListener('input', render));
   render();
 }
