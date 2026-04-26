@@ -1,17 +1,20 @@
-# PATCH — atualização dos currículos PT/EN
+# PATCH — ícones sociais na seção Pessoas/People
 
 Substitua/adicone somente estes arquivos:
 
 - people.html
 - en/people.html
-- assets/docs/cv-vagner-marques-pt.pdf
-- assets/docs/cv-vagner-marques-en.pdf
+- assets/icons/instagram.svg
+- assets/icons/linkedin.svg
+- assets/icons/email.svg
 
 O que muda:
-1. Na versão em português, o botão/ícone "Currículo Vitae" passa a abrir:
-   assets/docs/cv-vagner-marques-pt.pdf
+1. Adiciona Instagram, LinkedIn e e-mail profissional ao card do Prof. Dr. Vagner Antonio Marques.
+2. Aplica o ajuste na versão em português e na versão em inglês.
+3. Mantém os caminhos dos ícones acadêmicos existentes.
+4. Não altera publicações, projetos, rankings, contato, index, QR Code, mapas ou CSS.
 
-2. Na versão em inglês, o botão/ícone "Curriculum Vitae" passa a abrir:
-   ../assets/docs/cv-vagner-marques-en.pdf
-
-3. Não altera publicações, projetos, rankings, contato, index, QR Code, mapas ou CSS.
+Links usados:
+- Instagram: https://www.instagram.com/vagner.a.marques
+- LinkedIn: https://linkedin.com/in/vagneramarques
+- Email: mailto:vagner.marques@ufes.br
