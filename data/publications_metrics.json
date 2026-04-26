@@ -1,102 +1,156 @@
 [
   {
-    "year": "2026",
-    "type_pt": "Artigo aceito",
-    "type_en": "Accepted paper",
+    "year": 2026,
+    "status_pt": "Artigo aceito",
+    "status_en": "Accepted paper",
     "title": "Impact of KAMs and the Auditor's Opinion on the Decisions of Non-Institutional Investors",
     "authors": "FIORIN, M.A.F.; MIRANDA, D.V.; MARQUES, Vagner Antonio",
     "journal": "Revista Contabilidade & Finanças",
-    "publisher": "USP",
-    "metrics": {
-      "sjr": "SJR 2024: 0.202 / Q4",
-      "jcr": "JCR: não informado",
-      "abs": "AJG/ABS 2024: 1",
-      "qualis": "Qualis/CAPES: A2",
-      "capes": "CAPES 2025–2028: verificar",
-      "source": "Revista Contabilidade & Finanças — About the Journal"
-    },
-    "links": [
-      [
-        "Journal",
-        "https://www.revistas.usp.br/rcf/"
-      ],
-      [
-        "Abstract",
-        "https://www.revistas.usp.br/rcf/"
-      ]
-    ]
+    "area_pt": "Auditoria",
+    "area_en": "Auditing",
+    "ranking": "Qualis A2 · indexação a confirmar",
+    "indexing": "Scopus / Spell",
+    "doi": "",
+    "ssrn": "",
+    "journal_url": "https://www.revistas.usp.br/rcf/",
+    "recent": true,
+    "capes_2025_2028": "Verificar",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "impact_basis_pt": "Artigo aceito no Lattes; periódico a confirmar em bases atualizadas",
+    "impact_basis_en": "Accepted paper in Lattes; journal ranking to be confirmed in updated databases"
   },
   {
-    "year": "2026",
-    "type_pt": "Artigo aceito",
-    "type_en": "Accepted paper",
+    "year": 2026,
+    "status_pt": "Artigo aceito",
+    "status_en": "Accepted paper",
     "title": "Is an International Standard Really International? Evaluating the Effectiveness of Key Audit Matters Standards in Emerging and Developed Markets",
     "authors": "PAIN, P.; MARQUES, V.A.",
     "journal": "Managerial Auditing Journal",
-    "publisher": "Emerald",
-    "metrics": {
-      "sjr": "SJR 2024: 0.605 / Q1",
-      "jcr": "JCR IF: 2.8",
-      "abs": "AJG/ABS 2024: 2",
-      "qualis": "Qualis/CAPES: A1",
-      "capes": "CAPES 2025–2028: MB",
-      "source": "SCImago, Journal Ranking Portal, PROFIAP"
-    },
-    "links": [
-      [
-        "Journal",
-        "https://www.emerald.com/insight/publication/issn/0268-6902"
-      ]
-    ]
+    "area_pt": "Auditoria",
+    "area_en": "Auditing",
+    "ranking": "SJR Q1 · JCR · ABS/AJG · CAPES 2025–2028 MB",
+    "indexing": "Scopus / Web of Science",
+    "doi": "",
+    "ssrn": "",
+    "journal_url": "https://www.emerald.com/insight/publication/issn/0268-6902",
+    "recent": true,
+    "capes_2025_2028": "MB",
+    "impact_level": "high",
+    "impact_label_pt": "Impacto alto",
+    "impact_label_en": "High impact",
+    "impact_basis_pt": "SJR/JCR/ABS e classificação CAPES 2025–2028 quando disponível",
+    "impact_basis_en": "SJR/JCR/ABS and CAPES 2025–2028 classification when available"
   },
   {
-    "year": "2025",
-    "type_pt": "Artigo publicado",
-    "type_en": "Published paper",
-    "title": "Enhancing earnings quality: Effects of internal control weaknesses and key audit matters",
-    "authors": "PAIN, P.; MARQUES, V. A.; LOMES, R.",
-    "journal": "Revista Contabilidade & Finanças",
-    "publisher": "USP",
-    "metrics": {
-      "sjr": "SJR 2024: 0.202 / Q4",
-      "jcr": "JCR: não informado",
-      "abs": "AJG/ABS 2024: 1",
-      "qualis": "Qualis/CAPES: A2",
-      "capes": "CAPES 2025–2028: verificar",
-      "source": "Revista Contabilidade & Finanças — About the Journal"
-    },
-    "links": [
-      [
-        "DOI",
-        "https://doi.org/10.1590/1808-057x20241981"
-      ],
-      [
-        "Journal",
-        "https://www.revistas.usp.br/rcf/"
-      ]
-    ]
+    "year": 2025,
+    "status_pt": "Artigo publicado",
+    "status_en": "Published paper",
+    "title": "Reapresentações das demonstrações financeiras e política de dividendos: estratégias de compensação e sinalização no mercado de capitais brasileiro",
+    "authors": "BALLARINI, L.M.; MARQUES, V.A.; BRANDÃO, C.V.; MOREIRA, E.E.",
+    "journal": "Revista de Educação e Pesquisa em Contabilidade",
+    "area_pt": "Contabilidade financeira",
+    "area_en": "Financial accounting",
+    "ranking": "Qualis A4 · Spell",
+    "indexing": "Spell",
+    "doi": "",
+    "ssrn": "",
+    "journal_url": "",
+    "recent": true,
+    "capes_2025_2028": "Verificar",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "impact_basis_pt": "Qualis/CAPES indicado no Lattes; atualização 2025–2028 a verificar",
+    "impact_basis_en": "Qualis/CAPES indicated in Lattes; 2025–2028 update to verify"
   },
   {
-    "year": "2025",
-    "type_pt": "Artigo publicado",
-    "type_en": "Published paper",
+    "year": 2025,
+    "status_pt": "Artigo publicado",
+    "status_en": "Published paper",
     "title": "Unlocking the path to creditworthiness: the nexus of national governance and credit ratings in emerging markets",
-    "authors": "PINTO, B. M. M.; MARQUES, V. A.; BREGONCI, L. V.; PAIN, P.",
+    "authors": "PINTO, B.M.M.; MARQUES, V.A.; BREGONCI, L.V.; PAIN, P.",
     "journal": "Journal of Management and Governance",
-    "publisher": "Springer",
-    "metrics": {
-      "sjr": "SJR 2024: 1.041 / Q1",
-      "jcr": "JCR IF: 4.0",
-      "abs": "AJG/ABS 2024: 1",
-      "qualis": "Qualis/CAPES: verificar",
-      "capes": "CAPES 2025–2028: verificar",
-      "source": "SCImago/Resurchify, Journal Ranking Portal"
-    },
-    "links": [
-      [
-        "Journal",
-        "https://link.springer.com/journal/10997"
-      ]
-    ]
+    "area_pt": "Governança e mercados",
+    "area_en": "Governance and markets",
+    "ranking": "Qualis A2 · SJR/JCR a confirmar",
+    "indexing": "Scopus / Web of Science",
+    "doi": "",
+    "ssrn": "",
+    "journal_url": "https://link.springer.com/journal/10997",
+    "recent": true,
+    "capes_2025_2028": "Verificar",
+    "impact_level": "high",
+    "impact_label_pt": "Impacto alto",
+    "impact_label_en": "High impact",
+    "impact_basis_pt": "Periódico internacional indexado; Qualis indicado no Lattes",
+    "impact_basis_en": "International indexed journal; Qualis indicated in Lattes"
+  },
+  {
+    "year": 2025,
+    "status_pt": "Artigo publicado",
+    "status_en": "Published paper",
+    "title": "Enhancing earnings quality: Effects of internal control weaknesses and key audit matters",
+    "authors": "PAIN, P.; MARQUES, V.A.; LOMES, R.D.",
+    "journal": "Revista Contabilidade & Finanças",
+    "area_pt": "Auditoria",
+    "area_en": "Auditing",
+    "ranking": "Qualis A2 · Scopus/Spell",
+    "indexing": "Scopus / Spell",
+    "doi": "https://doi.org/10.1590/1808-057x20241981",
+    "ssrn": "",
+    "journal_url": "https://www.revistas.usp.br/rcf/",
+    "recent": true,
+    "capes_2025_2028": "Verificar",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "impact_basis_pt": "Qualis/CAPES indicado no Lattes; DOI disponível",
+    "impact_basis_en": "Qualis/CAPES indicated in Lattes; DOI available"
+  },
+  {
+    "year": 2025,
+    "status_pt": "Artigo publicado",
+    "status_en": "Published paper",
+    "title": "Shifting the balance: how ESG transformed corporate debt in emerging and developed markets post-COP21",
+    "authors": "PAIN, P.; SANTOS, G.C.; MARQUES, V.A.",
+    "journal": "Asian Journal of Accounting Research",
+    "area_pt": "Finanças e ESG",
+    "area_en": "Finance and ESG",
+    "ranking": "Qualis A2 · Scopus",
+    "indexing": "Scopus",
+    "doi": "",
+    "ssrn": "",
+    "journal_url": "",
+    "recent": true,
+    "capes_2025_2028": "Verificar",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "impact_basis_pt": "Qualis/CAPES indicado no Lattes",
+    "impact_basis_en": "Qualis/CAPES indicated in Lattes"
+  },
+  {
+    "year": 2025,
+    "status_pt": "Artigo publicado",
+    "status_en": "Published paper",
+    "title": "Opinião do auditor sobre o risco de descontinuidade: precaução ou omissão?",
+    "authors": "MIRANDA, D.V.; FIORIN, M.A.F.; PAIN, P.; MARQUES, V.A.",
+    "journal": "Revista de Contabilidade e Organizações",
+    "area_pt": "Auditoria",
+    "area_en": "Auditing",
+    "ranking": "Qualis A2 · Spell/Scopus a confirmar",
+    "indexing": "Spell / Scopus",
+    "doi": "",
+    "ssrn": "",
+    "journal_url": "",
+    "recent": true,
+    "capes_2025_2028": "Verificar",
+    "impact_level": "moderate",
+    "impact_label_pt": "Impacto moderado",
+    "impact_label_en": "Moderate impact",
+    "impact_basis_pt": "Qualis/CAPES indicado no Lattes",
+    "impact_basis_en": "Qualis/CAPES indicated in Lattes"
   }
 ]
