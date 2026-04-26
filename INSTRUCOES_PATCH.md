@@ -1,22 +1,32 @@
-# PATCH — Lattes, Qualis/CAPES, publicações indexadas e projetos financiados
+# PATCH — apoio institucional, certificação CNPq e seção Pessoas
 
 Substitua/adicone somente estes arquivos no GitHub:
 
-- `applied-projects.html`
-- `en/applied-projects.html`
-- `assets/js/publications.js`
-- `data/publications_lse_nber.json`
-- `data/publications_metrics.json`
-- `data/journal_metrics.json`
-- `data/funded_projects.json`
-- `data/sources/classificacao_area27_periodicos.xlsx`
-- `data/sources/classificacoes_publicadas_area27_2026.xlsx`
-- `data/sources/README_fontes.md`
+- index.html
+- en/index.html
+- people.html
+- en/people.html
+- assets/css/style.css
+- assets/images/cnpq-certificado.png
+- assets/icons/lattes.svg
+- assets/icons/orcid.svg
+- assets/icons/wos.svg
+- assets/icons/cv.svg
+- assets/docs/vagner_marques_cv.pdf
 
-O que muda:
-1. A seção Publicações passa a conter somente artigos publicados/aceitos em periódicos indexados em Scopus, Web of Science, SciELO ou SPELL.
-2. As métricas exibem CAPES 2025–2028, ABDC, ABS, JCR, SJR, SPELL e Qualis revisado conforme os arquivos de classificação.
-3. A seção Projetos Financiados passa a exibir edital, instituição de fomento e resumo.
-4. As planilhas de classificação ficam arquivadas em `data/sources/` para consulta no GitHub.
+O que foi alterado:
+1. A seção de apoio institucional passa a informar que o GECAT é certificado no DGP/CNPq.
+2. O selo de certificação aponta para: http://dgp.cnpq.br/dgp/espelhogrupo/7440811940315375
+3. As logos de UFES, FAPES, CNPq, SEAD e UNAC ficam lado a lado, maiores e proporcionais.
+4. A seção Pessoas recebeu mini currículo mais profissional e compacto.
+5. Abaixo da foto foram adicionados ícones para Lattes, ORCID, Web of Science e CV em PDF.
 
-Não altera index, contato, QR Code, Google Maps, imagens, CSS, working papers ou awards.
+Não foram alterados:
+- publicações
+- projetos financiados
+- rankings
+- working papers
+- contato
+- QR Code
+- Google Maps
+- scripts de métricas

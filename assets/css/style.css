@@ -526,36 +526,120 @@ a{color:var(--teal)}
   }
 }
 
+
+/* Institutional support section */
+
 .institutional-support{
-margin-top:60px;
-text-align:center;
+  background:#ffffff;
+  border-top:1px solid var(--line);
+  padding:76px 0;
 }
 
-.support-logos{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-align-items:center;
-gap:60px;
-margin-top:40px;
-}
-
-.support-logos img{
-height:80px;
-width:auto;
-object-fit:contain;
-filter:grayscale(10%);
-transition:transform .2s ease;
-}
-
-.support-logos img:hover{
-transform:scale(1.05);
+.institutional-support .lead{
+  max-width:920px;
 }
 
 .dgp-certification{
-margin:25px 0 10px 0;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  margin:26px 0 8px;
+  padding:10px 16px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff;
+  color:var(--teal);
+  text-decoration:none;
+  font-weight:900;
 }
 
 .dgp-certification img{
-height:70px;
+  width:46px;
+  height:46px;
+  object-fit:contain;
+  flex:0 0 auto;
+}
+
+.support-logos{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:34px;
+  flex-wrap:nowrap;
+  margin-top:34px;
+}
+
+.support-logos img{
+  width:190px;
+  height:96px;
+  object-fit:contain;
+  background:#fff;
+  padding:4px;
+  opacity:.98;
+  transition:transform .2s ease, opacity .2s ease;
+}
+
+.support-logos img:hover{
+  transform:scale(1.04);
+  opacity:1;
+}
+
+@media(max-width:980px){
+  .support-logos{
+    flex-wrap:wrap;
+    gap:28px;
+  }
+  .support-logos img{
+    width:170px;
+    height:84px;
+  }
+}
+
+@media(max-width:720px){
+  .support-logos{
+    gap:22px;
+  }
+  .support-logos img{
+    width:145px;
+    height:72px;
+  }
+  .dgp-certification{
+    border-radius:18px;
+    align-items:flex-start;
+    text-align:left;
+  }
+}
+
+/* Researcher academic links */
+.researcher-links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  margin:14px 0 18px;
+  flex-wrap:wrap;
+}
+
+.researcher-links a{
+  width:42px;
+  height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff;
+  text-decoration:none;
+  transition:transform .2s ease, background .2s ease;
+}
+
+.researcher-links a:hover{
+  transform:translateY(-2px);
+  background:var(--teal-soft);
+}
+
+.researcher-links img{
+  width:24px;
+  height:24px;
+  object-fit:contain;
 }
