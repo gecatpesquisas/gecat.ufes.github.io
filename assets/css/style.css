@@ -643,3 +643,68 @@ a{color:var(--teal)}
   height:24px;
   object-fit:contain;
 }
+
+
+
+/* Compact academic profile links — Pessoas/People */
+.photo .researcher-name{
+  font-family:"Source Serif 4",Georgia,serif;
+  color:var(--ink,#10213b);
+  font-size:1.18rem;
+  line-height:1.25;
+  text-align:center;
+  margin:16px 0 12px;
+}
+
+.compact-researcher-links{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:8px;
+  margin-top:10px;
+}
+
+.compact-researcher-links a{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-height:36px;
+  padding:8px 10px;
+  border:1px solid var(--line,#dce5e4);
+  border-radius:999px;
+  background:#fff;
+  color:var(--teal,#2f767b);
+  text-decoration:none;
+  font-size:.86rem;
+  font-weight:800;
+  line-height:1.2;
+}
+
+.compact-researcher-links a:hover{
+  background:var(--teal-soft,#e7f3f3);
+}
+
+.compact-researcher-links img{
+  width:18px !important;
+  height:18px !important;
+  max-width:18px !important;
+  max-height:18px !important;
+  min-width:18px;
+  object-fit:contain;
+  display:block;
+  border-radius:0;
+  padding:0;
+  background:transparent;
+  box-shadow:none;
+}
+
+@media(max-width:900px){
+  .compact-researcher-links{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:520px){
+  .compact-researcher-links{
+    grid-template-columns:1fr;
+  }
+}
