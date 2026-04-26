@@ -1,23 +1,17 @@
-# PATCH — ajuste estético dos ícones da seção Pessoas
+# PATCH — atualização dos currículos PT/EN
 
 Substitua/adicone somente estes arquivos:
 
 - people.html
 - en/people.html
-- assets/css/style.css
-- assets/icons/lattes.svg
-- assets/icons/orcid.svg
-- assets/icons/wos.svg
-- assets/icons/cv.svg
+- assets/docs/cv-vagner-marques-pt.pdf
+- assets/docs/cv-vagner-marques-en.pdf
 
 O que muda:
-1. O nome “Prof. Dr. Vagner Antonio Marques” aparece abaixo da foto.
-2. Os links acadêmicos ficam pequenos, alinhados e com texto:
-   - Currículo Lattes / Lattes CV
-   - ORCID
-   - ResearcherID
-   - Currículo Vitae / Curriculum Vitae
-3. Corrige o problema dos ícones gigantes.
-4. Aplica o ajuste tanto na versão em português quanto na versão em inglês.
+1. Na versão em português, o botão/ícone "Currículo Vitae" passa a abrir:
+   assets/docs/cv-vagner-marques-pt.pdf
 
-Não altera publicações, projetos, rankings, contato, index, QR Code ou mapas.
+2. Na versão em inglês, o botão/ícone "Curriculum Vitae" passa a abrir:
+   ../assets/docs/cv-vagner-marques-en.pdf
+
+3. Não altera publicações, projetos, rankings, contato, index, QR Code, mapas ou CSS.
