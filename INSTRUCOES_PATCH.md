@@ -1,16 +1,18 @@
-# PATCH — Projetos financiados e publicações pelo Lattes
+# PATCH — QR Code, Google Maps e correção mobile
 
-Suba somente estes arquivos no GitHub, preservando as pastas:
+Substitua somente estes arquivos no GitHub:
 
-- applied-projects.html
-- en/applied-projects.html
-- data/funded_projects.json
-- data/publications_lse_nber.json
-- data/publications_metrics.json
+- contact.html
+- en/contact.html
+- assets/css/style.css
+- assets/images/qrcode-site-gecat.png
 
-Não envie o ZIP fechado. Extraia e arraste os arquivos/pastas mantendo a estrutura.
+O que muda:
+1. Adiciona Google Maps na aba Contato.
+2. Adiciona QR Code do site na aba Contato.
+3. Corrige o menu em celular via CSS, sem alterar as outras páginas.
+4. Não mexe nas páginas de publicações, projetos, working papers ou index.
 
-Esta atualização:
-1. Atualiza os projetos financiados com título, período, edital e agência de fomento.
-2. Atualiza a base de publicações a partir do Currículo Lattes mais recente.
-3. Não altera o restante do site.
+Importante:
+- Envie preservando as pastas.
+- O arquivo QR deve ficar em: assets/images/qrcode-site-gecat.png
