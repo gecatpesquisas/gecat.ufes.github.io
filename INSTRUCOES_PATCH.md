@@ -1,14 +1,16 @@
-# PATCH — Somente métricas das publicações
+# PATCH — Métricas das publicações sem status "Verificar"
 
-Substitua somente estes arquivos no GitHub:
+Substitua somente a pasta/arquivos abaixo:
 
 - data/publications_lse_nber.json
 - data/publications_metrics.json
 - data/journal_metrics.json
 
-Não altere HTML, CSS, imagens ou outras páginas.
+O que foi corrigido:
+1. Remove o badge/status "CAPES 2025–2028: Verificar".
+2. Mantém somente métricas apresentáveis: SJR, JCR/JIF, ABS/AJG, Qualis/CAPES, SPELL e CAPES/Periódicos-ADM.
+3. Remove registros genéricos "Periódico indexado", pois eles não permitem métricas confiáveis por periódico.
+4. Não altera HTML, CSS, imagens, layout, contato, projetos nem working papers.
 
-O que muda:
-- Atualiza os badges de cada publicação com SJR, JCR/JIF, ABS/AJG, Qualis/CAPES e CAPES 2025–2028.
-- Mantém a estrutura e o layout já existentes.
-- Onde a métrica não foi encontrada em fonte aberta, o campo informa "não localizado" ou "verificar no Periódicos-ADM".
+Observação:
+Quando a classificação CAPES 2025–2028 não está exposta em fonte aberta indexável, o campo passa a apontar para "Base Periódicos-ADM" em vez de mostrar "Verificar".
