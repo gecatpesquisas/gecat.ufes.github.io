@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Working Papers | GECAT · UFES</title>
+<meta name="description" content="Working papers do GECAT com integração SSRN, DOI e rastreamento privado de cliques.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="site-header">
+  <div class="wrap site-nav">
+    <a class="site-brand" href="index.html"><img class="site-logo" src="assets/images/logo-gecat.jpg" alt="GECAT UFES"></a>
+    <div class="site-links">
+      <a href="research.html">Pesquisa</a>
+      <a href="people.html">Pessoas</a>
+      <a href="publications.html">Publicações</a>
+      <a href="working-papers.html">Working Papers</a>
+      <a href="awards.html">Prêmios</a>
+      <a href="applied-projects.html">Projetos Aplicados</a>
+      <a href="contact.html">Contato</a>
+      <a href="en/index.html">EN</a>
+    </div>
+  </div>
+</nav>
+<header class="hero">
+  <div class="wrap">
+    <div class="label">Trabalhos em desenvolvimento</div>
+    <h1>Working Papers</h1>
+    <p class="lead">
+      Pesquisas em desenvolvimento vinculadas à agenda científica do GECAT, com links diretos para SSRN,
+      DOI e rastreamento privado de cliques para monitoramento de impacto.
+    </p>
+  </div>
+</header>
+<section>
+  <div class="wrap">
+    <div id="working-paper-list" class="wp-list"></div>
+    <p class="pub-note">Os dados desta página são carregados de <code>data/ssrn_papers.json</code>, evitando alterações manuais no HTML.</p>
+  </div>
+</section>
+<script src="assets/js/working-papers.js" defer></script>
+<script>document.addEventListener('DOMContentLoaded', function(){ loadWorkingPapers('pt'); });</script>
+<footer class="footer"><div class="wrap"><strong>GECAT · UFES</strong><br>Grupo de Estudos em Contabilidade, Auditoria e Tributação · Universidade Federal do Espírito Santo</div></footer>
+<script src="assets/js/analytics.js" defer></script>
+<script data-goatcounter="https://gecat.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>

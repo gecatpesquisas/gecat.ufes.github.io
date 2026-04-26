@@ -1,0 +1,406 @@
+:root{
+  --teal:#2f767b;
+  --teal-soft:#e7f3f3;
+  --ink:#10213b;
+  --muted:#5f6f7f;
+  --bg:#f7f8f7;
+  --card:#ffffff;
+  --line:#dce5e4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.65;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:999}
+.site-nav{min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.site-brand{display:flex;align-items:center;text-decoration:none}
+.site-logo{height:78px;width:auto;display:block}
+.site-links{display:flex;align-items:center;justify-content:flex-end;gap:18px;flex-wrap:wrap}
+.site-links a{
+  display:inline-block;
+  font-size:.78rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:800;
+}
+.site-links a:hover{color:var(--teal)}
+.hero{
+  padding:86px 0 70px;
+  background:linear-gradient(135deg,rgba(255,255,255,.97),rgba(231,243,243,.95));
+  border-bottom:1px solid var(--line);
+}
+.label{
+  font-size:.76rem;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+  color:var(--teal);
+  font-weight:900;
+}
+h1,h2,h3,.title,.wp-title{font-family:"Source Serif 4",Georgia,serif;color:var(--ink)}
+h1{font-size:clamp(2.4rem,5vw,4.8rem);line-height:1.02;margin:.45rem 0 1.25rem}
+.title{font-size:clamp(1.9rem,3vw,3.1rem);line-height:1.12;margin:.35rem 0 1rem}
+.lead{color:var(--muted);font-size:1.06rem;max-width:850px}
+section{padding:72px 0}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:26px;
+}
+.card h3{margin:.2rem 0 .65rem;font-size:1.25rem}
+.card p{color:var(--muted);margin:.35rem 0}
+.pill{
+  display:inline-block;
+  background:var(--teal-soft);
+  color:var(--teal);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:5px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.hero-card{background:white;border:1px solid var(--line);border-radius:22px;padding:28px}
+.hero-card img{width:100%;max-height:190px;object-fit:contain;display:block}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.stat{background:var(--teal-soft);padding:16px;border-radius:14px}
+.stat b{display:block;color:var(--teal);font-size:1.5rem}
+.stat span{color:var(--muted);font-size:.8rem;text-transform:uppercase;font-weight:800}
+.profile{display:grid;grid-template-columns:320px 1fr;gap:36px;align-items:start}
+.photo{background:white;border:1px solid var(--line);border-radius:22px;padding:20px;position:sticky;top:116px}
+.photo img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;background:#edf3f3}
+.info-list{list-style:none;padding:0;margin:18px 0 0}
+.info-list li{border-top:1px solid var(--line);padding:10px 0;color:var(--muted);font-size:.92rem}
+.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.person{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.pub,.award{display:grid;grid-template-columns:110px 1fr;gap:24px;border-top:1px solid var(--line);padding:22px 0}
+.pub:first-child,.award:first-child{border-top:none}
+.year,.award-year{color:var(--teal);font-weight:900}
+.pub-title{font-weight:900;color:var(--ink)}
+.meta,.award-text span{color:var(--muted);font-size:.94rem}
+.pub-links,.links-inline,.wp-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.pub-links a,.links-inline a,.wp-actions a,.wp-actions button{
+  color:var(--teal);
+  text-decoration:none;
+  font-weight:800;
+  font-size:.88rem;
+  border:1px solid var(--teal);
+  background:#fff;
+  border-radius:999px;
+  padding:7px 12px;
+  cursor:pointer;
+}
+.pub-links a:hover,.links-inline a:hover,.wp-actions a:hover,.wp-actions button:hover{background:var(--teal-soft)}
+.wp-list{display:grid;gap:22px;margin-top:28px}
+.wp-item{background:#fff;border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:26px}
+.wp-meta{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);font-weight:900;margin-bottom:8px}
+.wp-title{font-size:1.55rem;line-height:1.22;margin:0 0 8px}
+.wp-authors{color:var(--muted);font-weight:700;margin-bottom:14px}
+.wp-abstract{display:none;margin-top:16px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.wp-abstract.open{display:block}
+.awards-list{background:white;border:1px solid var(--line);border-radius:18px;padding:8px 28px}
+.award-text{color:var(--ink);line-height:1.55}
+.award-text span{display:block;margin-top:3px}
+.contact-list{list-style:none;padding:0;margin:0}
+.contact-list li{padding:7px 0;color:var(--muted)}
+.contact-list a{color:var(--teal);font-weight:800;text-decoration:none}
+.footer{background:var(--ink);color:#d8e0e0;padding:38px 0;margin-top:40px}
+.footer a{color:#b7e4e4;text-decoration:none}
+a{color:var(--teal)}
+@media(max-width:900px){
+  .hero-grid,.grid2,.grid3,.profile,.people-grid{grid-template-columns:1fr}
+  .site-links{display:none}
+  .site-logo{height:68px}
+  .photo{position:static}
+  .pub,.award{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+}
+
+
+/* Publication metrics */
+.metrics{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:10px 0 6px;
+}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  border:1px solid var(--line,#dce5e4);
+  background:#eef7f7;
+  color:#2f767b;
+  border-radius:999px;
+  padding:5px 10px;
+  font-size:.78rem;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.02em;
+}
+.badge.neutral{
+  background:#fff;
+  color:#5f6f7f;
+}
+.pub-note{
+  color:var(--muted,#5f6f7f);
+  font-size:.92rem;
+  margin-top:18px;
+}
+
+
+
+/* Funded projects */
+.project-list{
+  display:grid;
+  gap:18px;
+  margin-top:24px;
+}
+.project-item{
+  background:#fff;
+  border:1px solid var(--line,#dce5e4);
+  border-left:5px solid var(--teal,#2f767b);
+  border-radius:16px;
+  padding:24px;
+}
+.project-item h3{
+  margin:.2rem 0 .4rem;
+}
+.project-meta{
+  color:var(--muted,#5f6f7f);
+  font-size:.92rem;
+  margin-bottom:8px;
+}
+.project-kind{
+  display:inline-block;
+  background:#e7f3f3;
+  color:#2f767b;
+  border-radius:999px;
+  padding:5px 10px;
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+
+
+/* LSE/NBER publications page */
+.pub-toolbar{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:24px 0 20px;
+}
+.pub-toolbar select,.pub-toolbar input{
+  width:100%;
+  border:1px solid var(--line,#dce5e4);
+  border-radius:12px;
+  padding:11px 12px;
+  font:inherit;
+  background:#fff;
+  color:var(--ink,#10213b);
+}
+.publication-list{
+  display:grid;
+  gap:18px;
+}
+.publication-item{
+  background:#fff;
+  border:1px solid var(--line,#dce5e4);
+  border-left:5px solid var(--teal,#2f767b);
+  border-radius:16px;
+  padding:24px;
+}
+.publication-topline{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-bottom:8px;
+}
+.publication-year{
+  color:var(--teal,#2f767b);
+  font-weight:900;
+}
+.publication-status{
+  background:#e7f3f3;
+  color:#2f767b;
+  border-radius:999px;
+  padding:4px 9px;
+  font-size:.72rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.publication-title{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.35rem;
+  line-height:1.25;
+  font-weight:800;
+  margin:4px 0 6px;
+}
+.publication-meta{
+  color:var(--muted,#5f6f7f);
+  font-size:.94rem;
+}
+.publication-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:11px;
+}
+.publication-badges span{
+  display:inline-flex;
+  border:1px solid var(--line,#dce5e4);
+  background:#f3f8f8;
+  color:#2f767b;
+  border-radius:999px;
+  padding:5px 10px;
+  font-size:.78rem;
+  font-weight:800;
+}
+.publication-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+}
+.publication-actions a{
+  border:1px solid var(--teal,#2f767b);
+  color:var(--teal,#2f767b);
+  border-radius:999px;
+  padding:7px 12px;
+  font-size:.86rem;
+  font-weight:900;
+  text-decoration:none;
+}
+.publication-actions a:hover{background:#e7f3f3}
+.pub-summary{
+  color:var(--muted,#5f6f7f);
+  font-size:.95rem;
+  margin:10px 0 22px;
+}
+@media(max-width:900px){
+  .pub-toolbar{grid-template-columns:1fr}
+}
+
+
+
+/* Impact indicators for journal rankings */
+.impact-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  border-radius:999px;
+  padding:6px 11px;
+  font-size:.78rem;
+  font-weight:900;
+  letter-spacing:.02em;
+}
+.impact-badge .impact-dot{
+  font-size:.95rem;
+  line-height:1;
+}
+.impact-high{
+  background:#e6f4ea;
+  color:#137333;
+  border:1px solid #b7dfc1;
+}
+.impact-moderate{
+  background:#fff7e6;
+  color:#8a5a00;
+  border:1px solid #f0d28a;
+}
+.impact-low{
+  background:#fdecea;
+  color:#b3261e;
+  border:1px solid #f1b8b2;
+}
+.impact-unknown{
+  background:#eef1f5;
+  color:#5f6f7f;
+  border:1px solid #d6dde6;
+}
+.ranking-source{
+  color:var(--muted,#5f6f7f);
+  font-size:.86rem;
+  margin-top:8px;
+}
+
+
+
+/* Working papers data-driven section */
+.wp-list{
+  display:grid;
+  gap:22px;
+  margin-top:28px;
+}
+.wp-item{
+  background:#fff;
+  border:1px solid var(--line,#dce5e4);
+  border-left:5px solid var(--teal,#2f767b);
+  border-radius:14px;
+  padding:26px;
+}
+.wp-meta{
+  font-size:.85rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:var(--teal,#2f767b);
+  font-weight:900;
+  margin-bottom:8px;
+}
+.wp-title{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.55rem;
+  line-height:1.22;
+  margin:0 0 8px;
+}
+.wp-authors{
+  color:var(--muted,#5f6f7f);
+  font-weight:700;
+  margin-bottom:14px;
+}
+.wp-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+.wp-actions a,.wp-actions button{
+  border:1px solid var(--teal,#2f767b);
+  color:var(--teal,#2f767b);
+  background:#fff;
+  border-radius:999px;
+  padding:8px 13px;
+  font-weight:900;
+  text-decoration:none;
+  font-size:.86rem;
+  cursor:pointer;
+}
+.wp-actions a:hover,.wp-actions button:hover{
+  background:#e7f3f3;
+}
+.wp-abstract{
+  display:none;
+  margin-top:16px;
+  color:var(--muted,#5f6f7f);
+  border-top:1px solid var(--line,#dce5e4);
+  padding-top:14px;
+}
+.wp-abstract.open{
+  display:block;
+}

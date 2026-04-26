@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Working Papers | GECAT · UFES</title>
+<meta name="description" content="GECAT working papers with SSRN, DOI, and private click tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<nav class="site-header">
+  <div class="wrap site-nav">
+    <a class="site-brand" href="../index.html"><img class="site-logo" src="../assets/images/logo-gecat.jpg" alt="GECAT UFES"></a>
+    <div class="site-links">
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="working-papers.html">Working Papers</a>
+      <a href="awards.html">Awards</a>
+      <a href="applied-projects.html">Applied Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="../index.html">PT</a>
+    </div>
+  </div>
+</nav>
+<header class="hero">
+  <div class="wrap">
+    <div class="label">Research in progress</div>
+    <h1>Working Papers</h1>
+    <p class="lead">
+      Ongoing research papers connected to GECAT’s research agenda, with direct SSRN and DOI links
+      and private click tracking for impact monitoring.
+    </p>
+  </div>
+</header>
+<section>
+  <div class="wrap">
+    <div id="working-paper-list" class="wp-list"></div>
+    <p class="pub-note">This page loads data from <code>data/ssrn_papers.json</code>, avoiding manual edits to the HTML.</p>
+  </div>
+</section>
+<script src="../assets/js/working-papers.js" defer></script>
+<script>document.addEventListener('DOMContentLoaded', function(){ loadWorkingPapers('en'); });</script>
+<footer class="footer"><div class="wrap"><strong>GECAT · UFES</strong><br>Research Group on Accounting, Auditing and Taxation · Federal University of Espírito Santo</div></footer>
+<script src="../assets/js/analytics.js" defer></script>
+<script data-goatcounter="https://gecat.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
