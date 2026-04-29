@@ -1,17 +1,18 @@
 (function(){
   function addStyles(){
-    if(document.getElementById('curso-extensao-carousel-style')) return;
+    var old = document.getElementById('curso-extensao-carousel-style');
+    if(old) old.remove();
 
-    var style=document.createElement('style');
-    style.id='curso-extensao-carousel-style';
+    var style = document.createElement('style');
+    style.id = 'curso-extensao-carousel-style';
     style.textContent = `
       .curso-carousel-wrap{
         margin:34px auto 0;
       }
 
       .curso-carousel{
-        position:relative;
-        overflow:hidden;
+        position:relative !important;
+        overflow:hidden !important;
         border-radius:24px;
         box-shadow:0 22px 50px rgba(16,33,59,.14);
         background:#fff;
@@ -109,21 +110,21 @@
       }
 
       .curso-carousel-dots{
-        position:absolute;
+        position:absolute !important;
         left:0;
         right:0;
         bottom:14px;
         display:flex;
         justify-content:center;
         gap:8px;
-        z-index:6;
+        z-index:30 !important;
       }
 
       .curso-carousel-dot{
         width:11px;
         height:11px;
         border-radius:50%;
-        background:rgba(255,255,255,.75);
+        background:rgba(255,255,255,.85);
         border:1px solid rgba(16,33,59,.25);
         cursor:pointer;
       }
@@ -136,35 +137,36 @@
         position:absolute !important;
         top:50% !important;
         transform:translateY(-50%) !important;
-        z-index:20 !important;
-        width:52px !important;
-        height:52px !important;
+        z-index:999 !important;
+        width:56px !important;
+        height:56px !important;
         border-radius:999px !important;
-        border:2px solid rgba(255,255,255,.9) !important;
-        background:rgba(11,92,92,.92) !important;
-        color:#fff !important;
-        font-size:30px !important;
+        border:3px solid #ffffff !important;
+        background:#0b5c5c !important;
+        color:#ffffff !important;
+        font-size:34px !important;
         font-weight:900 !important;
         line-height:1 !important;
         display:flex !important;
         align-items:center !important;
         justify-content:center !important;
         cursor:pointer !important;
-        box-shadow:0 10px 28px rgba(16,33,59,.28) !important;
-        opacity:.96 !important;
+        box-shadow:0 12px 30px rgba(16,33,59,.35) !important;
+        opacity:1 !important;
+        visibility:visible !important;
+        pointer-events:auto !important;
       }
 
       .curso-carousel-arrow:hover{
-        background:#0b5c5c !important;
-        transform:translateY(-50%) scale(1.06) !important;
+        background:#13807a !important;
       }
 
       .curso-carousel-arrow.prev{
-        left:18px !important;
+        left:22px !important;
       }
 
       .curso-carousel-arrow.next{
-        right:18px !important;
+        right:22px !important;
       }
 
       @media(max-width:780px){
@@ -178,17 +180,17 @@
         }
 
         .curso-carousel-arrow{
-          width:42px !important;
-          height:42px !important;
-          font-size:24px !important;
+          width:44px !important;
+          height:44px !important;
+          font-size:26px !important;
         }
 
         .curso-carousel-arrow.prev{
-          left:8px !important;
+          left:10px !important;
         }
 
         .curso-carousel-arrow.next{
-          right:8px !important;
+          right:10px !important;
         }
       }
     `;
@@ -196,13 +198,14 @@
   }
 
   function insertCarousel(){
-    if(document.querySelector('.curso-carousel')) return;
+    var existing = document.querySelector('.curso-carousel-wrap');
+    if(existing) existing.remove();
 
     var target = document.querySelector('.hero') || document.querySelector('header') || document.querySelector('.site-header');
     if(!target) return;
 
-    var wrap=document.createElement('div');
-    wrap.className='wrap curso-carousel-wrap';
+    var wrap = document.createElement('div');
+    wrap.className = 'wrap curso-carousel-wrap';
 
     wrap.innerHTML = `
       <section class="curso-carousel" aria-label="Destaque do curso de extensão">
@@ -213,7 +216,7 @@
         <div class="curso-carousel-track">
           <article class="curso-carousel-slide">
             <a class="curso-carousel-image-link" href="curso-extensao.html">
-              <img class="curso-carousel-image" src="assets/images/curso-extensao-lrf.png?v=20" alt="Curso de Extensão em Contabilidade Pública e Lei de Responsabilidade Fiscal">
+              <img class="curso-carousel-image" src="assets/images/curso-extensao-lrf.png?v=50" alt="Curso de Extensão em Contabilidade Pública e Lei de Responsabilidade Fiscal">
             </a>
           </article>
 
@@ -252,6 +255,7 @@
     var dots = wrap.querySelectorAll('.curso-carousel-dot');
     var prev = wrap.querySelector('.curso-carousel-arrow.prev');
     var next = wrap.querySelector('.curso-carousel-arrow.next');
+
     var index = 0;
     var total = 2;
     var timer = null;
@@ -271,33 +275,25 @@
       }, 6500);
     }
 
-    prev.addEventListener('click', function(e){
+    prev.onclick = function(e){
       e.preventDefault();
       e.stopPropagation();
       go(index - 1);
       restart();
-    });
+    };
 
-    next.addEventListener('click', function(e){
+    next.onclick = function(e){
       e.preventDefault();
       e.stopPropagation();
       go(index + 1);
       restart();
-    });
+    };
 
     dots.forEach(function(dot, i){
-      dot.addEventListener('click', function(){
+      dot.onclick = function(){
         go(i);
         restart();
-      });
-    });
-
-    wrap.addEventListener('mouseenter', function(){
-      if(timer) clearInterval(timer);
-    });
-
-    wrap.addEventListener('mouseleave', function(){
-      restart();
+      };
     });
 
     restart();
