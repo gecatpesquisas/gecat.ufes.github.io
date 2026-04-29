@@ -1,17 +1,11 @@
-# PATCH — carrossel do curso de extensão na página inicial
+# Correção do banner/carrossel do curso
 
-Substitua/adicone somente:
+Substitua somente:
 
-- index.html
-- curso-extensao.html
 - assets/js/curso-banner.js
-- assets/images/curso-extensao-lrf.png
 
-O que muda:
-1. Adiciona a imagem do anúncio navegando automaticamente na página inicial.
-2. Mantém uma página fixa do curso em curso-extensao.html.
-3. Mantém popup leve uma vez por sessão.
-4. Não altera publicações, pessoas, projetos, rankings, contato, mapas, CSS ou arquivos de dados.
-
-Observação:
-O carrossel é feito apenas com JavaScript estático, compatível com GitHub Pages.
+Este arquivo:
+- força a exibição do carrossel abaixo da seção principal;
+- usa o caminho correto: assets/images/curso-extensao-lrf.png;
+- ignora qualquer configuração antiga que tenha ocultado o banner na sessão;
+- não altera index.html, CSS, publicações, pessoas, projetos ou contatos.
