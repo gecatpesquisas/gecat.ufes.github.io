@@ -1,11 +1,14 @@
-# Correção do banner/carrossel do curso
+# PATCH — setas corrigidas no carrossel
 
 Substitua somente:
 
 - assets/js/curso-banner.js
 
-Este arquivo:
-- força a exibição do carrossel abaixo da seção principal;
-- usa o caminho correto: assets/images/curso-extensao-lrf.png;
-- ignora qualquer configuração antiga que tenha ocultado o banner na sessão;
-- não altera index.html, CSS, publicações, pessoas, projetos ou contatos.
+O que muda:
+1. Adiciona seta esquerda e direita visíveis.
+2. Mantém rotação automática.
+3. Adiciona bolinhas clicáveis.
+4. Atualiza a imagem com ?v=20 para evitar cache.
+5. Não altera index.html, CSS, imagens, publicações, pessoas, projetos ou contato.
+
+Depois do upload, use Ctrl + F5.
