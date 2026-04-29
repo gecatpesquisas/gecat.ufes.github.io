@@ -1,3 +1,4 @@
+
 (function(){
   function addStyles(){
     if(document.getElementById('curso-extensao-carousel-style')) return;
@@ -23,6 +24,29 @@
       .curso-carousel-dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:8px;pointer-events:none;}
       .curso-carousel-dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.65);border:1px solid rgba(16,33,59,.18);}
       .curso-carousel-dot.active{background:#0b5c5c;}
+      
+      /* SETAS */
+      .curso-carousel-arrow{
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        width:44px;
+        height:44px;
+        border-radius:50%;
+        border:none;
+        background:rgba(11,92,92,.85);
+        color:#fff;
+        font-size:22px;
+        cursor:pointer;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        z-index:5;
+      }
+      .curso-carousel-arrow:hover{background:#0b5c5c;}
+      .curso-carousel-arrow.left{left:12px;}
+      .curso-carousel-arrow.right{right:12px;}
+
       @media(max-width:780px){
         .curso-carousel-info{grid-template-columns:1fr;padding:24px;}
         .curso-carousel-actions{justify-content:flex-start;}
@@ -34,40 +58,43 @@
   function insertCarousel(){
     if(document.querySelector('.curso-carousel')) return;
 
-    var target = document.querySelector('.hero') || document.querySelector('header') || document.querySelector('.site-header');
+    var target = document.querySelector('.hero') || document.querySelector('header');
     if(!target) return;
 
     var wrap=document.createElement('div');
     wrap.className='wrap curso-carousel-wrap';
     wrap.innerHTML = `
-      <section class="curso-carousel" aria-label="Destaque do curso de extensão">
+      <section class="curso-carousel">
+        <button class="curso-carousel-arrow left">&#10094;</button>
+        <button class="curso-carousel-arrow right">&#10095;</button>
+
         <div class="curso-carousel-track">
           <article class="curso-carousel-slide">
             <a class="curso-carousel-image-link" href="curso-extensao.html">
-              <img class="curso-carousel-image" src="assets/images/curso-extensao-lrf.png?v=2" alt="Curso de Extensão em Contabilidade Pública e Lei de Responsabilidade Fiscal">
+              <img class="curso-carousel-image" src="assets/images/curso-extensao-lrf.png?v=3" alt="Curso de Extensão LRF">
             </a>
           </article>
+
           <article class="curso-carousel-slide">
             <div class="curso-carousel-info">
               <div>
                 <div class="kicker">Curso de extensão · inscrições em breve</div>
                 <h2>Contabilidade Pública e Lei de Responsabilidade Fiscal (LRF)</h2>
-                <p>Curso gratuito, semipresencial, com certificado de extensão emitido pela UFES. Início previsto para agosto de 2026.</p>
+                <p>Curso gratuito, semipresencial, com certificado de extensão emitido pela UFES.</p>
                 <div class="curso-carousel-tags">
                   <span>UFES / UnAC</span>
                   <span>12 meses</span>
                   <span>15h mensais</span>
-                  <span>Gestão fiscal e cidadania tributária</span>
                 </div>
               </div>
               <div class="curso-carousel-actions">
                 <a href="curso-extensao.html">Saiba mais</a>
-                <button type="button" data-curso-dismiss>Ocultar</button>
               </div>
             </div>
           </article>
         </div>
-        <div class="curso-carousel-dots" aria-hidden="true">
+
+        <div class="curso-carousel-dots">
           <span class="curso-carousel-dot active"></span>
           <span class="curso-carousel-dot"></span>
         </div>
@@ -78,23 +105,31 @@
 
     var track=wrap.querySelector('.curso-carousel-track');
     var dots=wrap.querySelectorAll('.curso-carousel-dot');
+    var prev=wrap.querySelector('.left');
+    var next=wrap.querySelector('.right');
+
     var index=0;
 
-    function go(next){
-      index=next;
+    function go(i){
+      index=i;
+      if(index<0) index=1;
+      if(index>1) index=0;
       track.style.transform='translateX(' + (-100*index) + '%)';
-      dots.forEach(function(dot,i){ dot.classList.toggle('active', i===index); });
+      dots.forEach(function(d,j){d.classList.toggle('active',j===index)});
     }
 
-    var timer=setInterval(function(){ go(index===0 ? 1 : 0); }, 6500);
-    wrap.addEventListener('mouseenter', function(){ clearInterval(timer); });
-    wrap.addEventListener('mouseleave', function(){ timer=setInterval(function(){ go(index===0 ? 1 : 0); }, 6500); });
+    next.onclick=function(){go(index+1)};
+    prev.onclick=function(){go(index-1)};
 
-    var btn=wrap.querySelector('[data-curso-dismiss]');
-    btn.addEventListener('click', function(){ wrap.remove(); });
+    var timer=setInterval(function(){go(index+1)},6500);
+
+    wrap.addEventListener('mouseenter',function(){clearInterval(timer)});
+    wrap.addEventListener('mouseleave',function(){
+      timer=setInterval(function(){go(index+1)},6500)
+    });
   }
 
-  document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener('DOMContentLoaded',function(){
     addStyles();
     insertCarousel();
   });

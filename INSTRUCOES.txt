@@ -1,0 +1,4 @@
+Substitua somente:
+assets/js/curso-banner.js
+
+Agora o carrossel tem setas esquerda/direita.
